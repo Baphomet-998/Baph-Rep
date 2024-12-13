@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Outfit;
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");   
+}
+@font-face {
+    font-family: Young-serif;
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+body{
+    background-color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: Outfit;
+    color: hsl(30, 10%, 34%);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+img{  
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/*headings*/
+
+.blockSection{
+    margin: 1.2rem;
+}
+
+h1{
+    font-family: Young-serif;
+    color: hsl(24, 5%, 18%);
+    line-height: 1;
+    
+}
+
+.blockSection__heading{
+    font-family: Young-serif;
+    color: hsl(14, 45%, 36%);
+}
+
+/*STYLING BLOCK SECTION*/
+
+/*PREPARATION TIME SECTION*/
+
+.blockSection--colorFont{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 7px;
+    margin: 1.1rem 1.3rem;
+    
+}
+
+.blockSection__heading--colorFont{
+    font-family: Outfit;
+    color: hsl(332, 51%, 32%);
+    font-size: 1.1em;
+    margin-left: 1.5rem;
+
+}
+
+.blockSection__list li{
+    padding-left: 1.1em;
+    margin-top: 1rem;
+}
+
+.blockSection__list li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+
+
+.blockSection__span{
+    font-weight: bolder;
+}
+
+hr{
+    width: 90%;
+    border: 1px solid hsl(0, 0%, 80%);
+}
+
+/*STYLING NUTRITION TABLE*/
+
+.nutritable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutritable__nutriValue{
+    color: hsl(14, 45%, 36%);
+}
+
+.nutritable__data{
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+}
+
+.nutritable__data--pad{
+    padding: 1rem;
+    
+}
+
+footer{
+    display: none;
+}
+
+/*TABLETS, DESKTOPS AND LARGER DEVICES*/
+
+@media screen and (min-width: 645px) {
+    body{
+        background-color: hsl(30, 54%, 90%);
+        padding: 4.5rem 0;   
+    }
+
+    main{
+        background-color: hsl(0, 0%, 100%);
+        width: 50%;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    img{
+        width: 95%;
+        margin: 0.5rem auto 0 auto;
+        border-radius: 7px;
+    }
+    
+}
